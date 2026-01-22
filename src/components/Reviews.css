@@ -1,0 +1,220 @@
+.reviews-section {
+  position: relative;
+  width: 100%;
+  padding: 0;
+}
+
+/* Big background like your reference */
+.reviews-hero {
+  position: relative;
+  min-height: 70vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.reviews-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.85) 5%,
+    rgba(0, 0, 0, 0.6) 40%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  mix-blend-mode: multiply;
+}
+
+/* Inner layout (centered on desktop, full-width on mobile) */
+.reviews-inner {
+  position: relative;
+  z-index: 2;
+  padding: 5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Card that fades/moves smoothly */
+.review-card-hero {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  max-width: 900px;
+  color: #fff;
+  animation: reviewFadeIn 0.9s ease-out;
+}
+
+/* Photo area, with “cutout card” style like reference */
+.review-photo-wrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.review-photo-bg {
+  width: 160px;
+  height: 160px;
+  background: #54b3ff;
+  transform: rotate(-8deg);
+  border-radius: 14px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+}
+
+.review-photo {
+  position: absolute;
+  top: 12px;
+  left: 18px;
+  width: 160px;
+  height: 160px;
+  border-radius: 14px;
+  object-fit: cover;
+  transform: rotate(4deg);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Text area */
+.review-main-content {
+  flex: 1;
+}
+
+/* Stars row */
+.review-stars-row {
+  margin-bottom: 1.2rem;
+}
+
+.star {
+  color: #ffb800;
+  font-size: 1.5rem;
+  margin-right: 0.25rem;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Quote text */
+.review-quote {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  font-weight: 700;
+  text-transform: none;
+  margin: 0 0 2rem;
+  max-width: 600px;
+}
+
+/* Signature / name + role */
+.review-signature {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.review-name {
+  font-weight: 800;
+  color: #ff6b35;
+}
+
+.review-role {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Dots (bottom center), no arrows */
+.reviews-dots {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 2.5rem;
+}
+
+.reviews-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  border: 2px solid #ff6b35;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.reviews-dot.active {
+  width: 28px;
+  background: #ff6b35;
+  box-shadow: 0 0 10px rgba(255, 107, 53, 0.7);
+}
+
+/* Smooth fade / slight slide animation when review changes */
+@keyframes reviewFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .review-card-hero {
+    gap: 2rem;
+  }
+
+  .review-quote {
+    font-size: 1.3rem;
+  }
+
+  .reviews-hero {
+    background-attachment: scroll;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .reviews-inner {
+    padding: 4rem 1.25rem 3rem;
+  }
+
+  .review-card-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.75rem;
+  }
+
+  .review-photo-bg,
+  .review-photo {
+    width: 130px;
+    height: 130px;
+  }
+
+  .review-quote {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+
+  .reviews-dots {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+/* Extra small */
+@media (max-width: 480px) {
+  .reviews-inner {
+    padding: 3.5rem 1rem 2.5rem;
+  }
+
+  .review-card-hero {
+    gap: 1.5rem;
+  }
+
+  .review-quote {
+    font-size: 1.05rem;
+  }
+}
