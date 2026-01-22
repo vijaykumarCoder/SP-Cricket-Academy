@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/%7BSP-Cricket-Academy%7D/static/css/main.3e41751b.css",
-    "main.js": "/%7BSP-Cricket-Academy%7D/static/js/main.acb36e7c.js",
-    "static/media/Great-Sejagad.ttf": "/%7BSP-Cricket-Academy%7D/static/media/Great-Sejagad.0dddd50adfe5008bd605.ttf",
-    "static/media/Great-Sejagad.otf": "/%7BSP-Cricket-Academy%7D/static/media/Great-Sejagad.deb0d426b5a0baff6ef7.otf",
-    "index.html": "/%7BSP-Cricket-Academy%7D/index.html",
-    "main.3e41751b.css.map": "/%7BSP-Cricket-Academy%7D/static/css/main.3e41751b.css.map",
-    "main.acb36e7c.js.map": "/%7BSP-Cricket-Academy%7D/static/js/main.acb36e7c.js.map"
+    "main.css": "/SP-Cricket-Academy/static/css/main.58f5e872.css",
+    "main.js": "/SP-Cricket-Academy/static/js/main.acb36e7c.js",
+    "static/media/Great-Sejagad.ttf": "/SP-Cricket-Academy/static/media/Great-Sejagad.0dddd50adfe5008bd605.ttf",
+    "static/media/Great-Sejagad.otf": "/SP-Cricket-Academy/static/media/Great-Sejagad.deb0d426b5a0baff6ef7.otf",
+    "index.html": "/SP-Cricket-Academy/index.html",
+    "main.58f5e872.css.map": "/SP-Cricket-Academy/static/css/main.58f5e872.css.map",
+    "main.acb36e7c.js.map": "/SP-Cricket-Academy/static/js/main.acb36e7c.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e41751b.css",
+    "static/css/main.58f5e872.css",
     "static/js/main.acb36e7c.js"
   ]
 }
